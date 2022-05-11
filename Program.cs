@@ -21,7 +21,18 @@ namespace Armstrong
 
         static void Main(string[] args)
         {
-            Console.WriteLine(Armstrong(153));
+            int nombre;
+	    Console.Write("Saissisez un nombre : ");
+	    try {
+			nombre  = Convert.ToInt32(Console.ReadLine());
+            }
+	    catch(Exception e)
+	    {
+		Console.WriteLine(e.Message); 
+	        return;
+	    }
+	    // Ici, tout va bien
+	    Console.WriteLine(Armstrong(nombre));
         }
     }
 }
