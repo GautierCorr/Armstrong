@@ -4,6 +4,10 @@ namespace Armstrong
 {
     class Program
     {
+	// Rôle : Indique si un nombre est de Armstrong
+        // Paramètres d'entrée   
+        // - nombre : entier à tester (en entrée)
+        // Valeur de sortie : True si nombre Armstrong sinon False 
 	static bool Armstrong(int nombre)
 	{
 		int centaine,dizaine,unite,reste;
